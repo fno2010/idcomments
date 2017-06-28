@@ -86,7 +86,7 @@ fi
 # ----------------------------------------------------------------------
 
 review=$1
-tempfile=$(tempfile)
+tempfile=$(mktemp)
 
 $sed -e "/^$OPT_TAGSTR:/i\\
 "  -e "/^$OPT_TAGSTR:/,/^[ \\	\\]*\$/c\\
